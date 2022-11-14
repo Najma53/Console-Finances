@@ -86,3 +86,10 @@ var finances = [
 ['Jan-2017', 138230],
 ['Feb-2017', 671099]
 ];
+
+
+// * The total number of months included in the dataset.
+// All the months are in array in order hence need the lenght of the array (my logic)
+var length = finances.length;
+
+console.log ("Total Months: " + (length) )
