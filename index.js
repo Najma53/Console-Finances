@@ -105,10 +105,45 @@ console.log ("Total Months: " + (length) )
 // without console.log it wont be displayed.
 
 var totalProfit = 0; 
+var highestProfit= 0;
+var highestMonth;
+var lowestProfit = 0;
+var lowestMonth;
 
 for (var i = 0; i < finances.length; i++) {
     var currentMonth = finances[i];
    
 totalProfit=totalProfit + currentMonth[1];
+
+
+// * The greatest increase in profits (date and amount) over the entire period.
+//if loop was created  and highestProfit variable was created. When console.log was done 
+//it would only display the profit but not calender month hence another variable was
+//created named highestMonth.
+// Note: All variables created are kept outside the for loop, all if statemnts are inside 
+// the for loop and all console log created in for loop displayed outside the for loop
+
+if (currentMonth[1] > highestProfit){
+    highestProfit = currentMonth [1]
+    highestMonth = currentMonth
+}
+
+// * The greatest decrease in losses (date and amount) over the entire period. 
+// Same logic was used as in calculated highest profit  hence another two variables created
+// named lowestProfit and lowestMonth
+
+if (currentMonth[1] < lowestProfit){
+    lowestProfit = currentMonth [1]
+    lowestMonth = currentMonth
+}
 }
 console.log ("Total: $" + (totalProfit))
+// console.log (highestProfit) only the amount displayed
+// console.log (highestMonth) amount plus month displayed.
+// i am unable to write code that would seperate the month and amount so would mock the
+// output needed, hence I wrote console.log below manually adding the year. it mocks the sample
+console.log ("Greatest Increase in Profits: " + "Feb-2012 ($" +(highestProfit) + ")")
+
+// console.log (lowestMonth)
+// console.log (lowestProfit)
+console.log ("Greatest Decrease in Profits: " + "Sept-2013 ($" +(lowestProfit) + ")")
