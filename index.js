@@ -95,3 +95,20 @@ var length = finances.length;
 console.log ("Financial Statement" )
 console.log ("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 console.log ("Total Months: " + (length) )
+
+// * The net total amount of Profit/Losses over the entire period.
+//add the amount together inside second array
+// setting variables to store data
+// giving a value of zero to initial one so wont affect calculation.
+// first variable  set was total profit and "for"loop was created.
+// console.log ("Total: $" + (totalProfit)) was written so we can see it in console,
+// without console.log it wont be displayed.
+
+var totalProfit = 0; 
+
+for (var i = 0; i < finances.length; i++) {
+    var currentMonth = finances[i];
+   
+totalProfit=totalProfit + currentMonth[1];
+}
+console.log ("Total: $" + (totalProfit))
