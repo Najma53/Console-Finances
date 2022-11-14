@@ -92,4 +92,6 @@ var finances = [
 // All the months are in array in order hence need the lenght of the array (my logic)
 var length = finances.length;
 
+console.log ("Financial Statement" )
+console.log ("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 console.log ("Total Months: " + (length) )
