@@ -59,4 +59,4 @@ First you need to pseudocoding. That is understand the problem in the language y
 
 Step 3
 
-Once you start writing the code in index.js file, save it. Then open index.html file in browser. Dont panic, it will be blank because it just contains boiler plate. Right click anywhere on it . This is what you should  see, select inspect and this is what you should see. In console tab, you will see how your code is working. But dont foget, first you need to do console.log in index.js file to see in console. If confuse please see my index.js file, lots of console.log done.
+Once you start writing the code in index.js file, save it. Then open index.html file in browser. Dont panic, it will be blank because it just contains boiler plate. Right click anywhere on it . This is ![what you should see](./images/inspect.png) select inspect and this is ![what you should see](./images/console.png). In console tab, you will see how your code is working. But dont foget, first you need to do console.log in index.js file to see in console. If confuse please see my index.js file, lots of console.log done.
