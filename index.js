@@ -138,6 +138,19 @@ if (currentMonth[1] < lowestProfit){
 }
 }
 console.log ("Total: $" + (totalProfit))
+
+//  * The average of the **changes** in Profit/Losses over the entire period.
+totalProfit/length;
+     Average = totalProfit/length
+     Average.toFixed(2);
+
+     console.log ("Average Change: $" + Average.toFixed(2))
+// Math round did not round it up. Below is math round calculation and consol.log
+     // Math.round((Average + Number.EPSILON) * 100) / 100;
+// console.log (((Average + Number.EPSILON) * 100) / 100)
+
+
+
 // console.log (highestProfit) only the amount displayed
 // console.log (highestMonth) amount plus month displayed.
 // i am unable to write code that would seperate the month and amount so would mock the

@@ -60,3 +60,9 @@ First you need to pseudocoding. That is understand the problem in the language y
 Step 3
 
 Once you start writing the code in index.js file, save it. Then open index.html file in browser. Dont panic, it will be blank because it just contains boiler plate. Right click anywhere on it . This is ![what you should see](./images/inspect.png) select inspect and this is ![what you should see](./images/console.png). In console tab, you will see how your code is working. But dont foget, first you need to do console.log in index.js file to see in console. If confuse please see my index.js file, lots of console.log done.
+
+# Conclusion
+It was interesting assignment, for me it was challenging writing the code and understanding it. Math behind it is understandable but coding was a bit difficult but as I kept doing (not that i had any clue but googling and writing) certain pieces started falling in places. Google helped a lot. I discovered,  you can do mathMax and mathMin to calculate highest and lowest value in array. Hence I used this reference https://daily-dev-tips.com/posts/javascript-find-min-max-from-array-of-arrays/
+to calculate and check if my code is correct. I console.log both ways and I came up with same answers. I have come up with conclusion atleast my Greatest Increase in Profit and my Greatest Decrease in Profit are correct.
+I have left my work in index.js file but commented out. Please go ahead and test incase am wrong. I also tried rounding of to two decimal places using Math .round but was unsucessful, did not work hence tried toFixed method and that work.
+Calculating Average change using this reference https://www.w3resource.com/javascript-exercises/javascript-math-exercise-45.php led me to a number and month in array. Logic tells me it should be abstract number hence didnt use this code of mine. It has been commented out in index.js file incase if anyone wants to try.
