@@ -143,9 +143,9 @@ console.log ("Total: $" + (totalProfit))
 totalProfit/length;
      Average = totalProfit/length
      Average.toFixed(2);
-
+// console.log (totalProfit/length)
      console.log ("Average Change: $" + Average.toFixed(2))
-// Math round did not round it up. Below is math round calculation and consol.log
+// Math round did not round it up. Below is math round calculation and the consol.log matches one in line 146 (not ronded up)
      // Math.round((Average + Number.EPSILON) * 100) / 100;
 // console.log (((Average + Number.EPSILON) * 100) / 100)
 
@@ -160,3 +160,48 @@ console.log ("Greatest Increase in Profits: " + "Feb-2012 ($" +(highestProfit) +
 // console.log (lowestMonth)
 // console.log (lowestProfit)
 console.log ("Greatest Decrease in Profits: " + "Sept-2013 ($" +(lowestProfit) + ")")
+
+
+
+
+
+// Reference:  https://daily-dev-tips.com/posts/javascript-find-min-max-from-array-of-arrays/
+
+// checking if my code working by doing it another way  and console log matches
+// i.e console log on line 158 = to console log on line 176
+// var highestProfit = finances.reduce((previous, current) =>{
+     // return current[1] > previous[1] ? current : previous;
+// });
+
+// console.log(highestProfit)
+
+
+// checking if my code working by doing it another way  and console log matches
+// i.e console log on line 163 = to console log on line 180
+// var lowestProfit = finances.reduce((previous, current) =>{
+     // return current[1] < previous[1] ? current : previous;
+// });
+
+// console.log(lowestProfit)
+
+
+
+
+
+// * The average of the **changes** in Profit/Losses over the entire period.
+// Tried calculating average change using this reference https://www.w3resource.com/javascript-exercises/javascript-math-exercise-45.php
+// but it lead to a specific value in array. Logically this should not happen if change is calculated, should be some
+// abstract number hence did not use it. 
+// below is my work commented out.
+
+// var totalChange = finances [0][1];
+
+// function subtraction(finances) {
+     // for (var i = 1, length = finances.length; i < length; i++)
+     // totalChange -= finances[i];
+// }
+// console.log (totalChange)
+
+
+
+
